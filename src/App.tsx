@@ -1,10 +1,15 @@
 import './App.css'
-import Map from './Components/Map/Map'
+import Layout from './Components/Layout/Layout'
+import MapContextProvider from './Context/MapContextProvider'
 
 function App() {
 
   return (
-    <Map/>
+    <>
+    <MapContextProvider>
+      <Layout/>
+    </MapContextProvider>
+    </>
   )
 }
 
